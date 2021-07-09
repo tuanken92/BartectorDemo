@@ -56,6 +56,7 @@ namespace BartectorDemo
             this.tbx_part_no = new System.Windows.Forms.TextBox();
             this.tbx_reel_id = new System.Windows.Forms.TextBox();
             this.btnOK = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -319,11 +320,22 @@ namespace BartectorDemo
             this.btnOK.UseVisualStyleBackColor = true;
             this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(93, 421);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 1;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btn_Clear_Click);
+            // 
             // AddReelID
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(307, 450);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -367,5 +379,6 @@ namespace BartectorDemo
         private System.Windows.Forms.TextBox tbx_part_no;
         private System.Windows.Forms.TextBox tbx_reel_id;
         private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.Button btnClear;
     }
 }

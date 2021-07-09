@@ -40,5 +40,19 @@ namespace BartectorDemo
         {
             Close();
         }
+
+        private void btn_Clear_Click(object sender, EventArgs e)
+        {
+            tbx_reel_id.Focus();
+            tbx_reel_id.Clear();
+            tbx_part_no.Clear();
+            tbx_supplier_pn.Clear();
+            tbx_date_code.Clear();
+            tbx_lot_code.Clear();
+            tbx_supplier.Clear();
+            tbx_quantity.Clear();
+            tbx_slot.Clear();
+            tbx_value.Clear();
+        }
     }
 }
